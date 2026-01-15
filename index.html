@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 My Dashboard</h1>
+            <p id="current-date">Loading date...</p>
+        </header>
+
+        <main class="dashboard-grid">
+            <section class="card weather-card">
+                <h2>🌤️ Weather</h2>
+                <div id="weather-display">
+                    <p class="loader">Loading weather...</p>
+                </div>
+                <p class="location-label">Dasmariñas, PH</p>
+            </section>
+
+            <section class="card crypto-card">
+                <h2>💰 Market Watch</h2>
+                <div id="crypto-container">
+                    <div class="crypto-item">
+                        <span>Bitcoin (BTC)</span>
+                        <span id="btc-price" class="price">Loading...</span>
+                    </div>
+                    <div class="crypto-item">
+                        <span>Ethereum (ETH)</span>
+                        <span id="eth-price" class="price">Loading...</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card todo-card">
+                <h2>✅ To-Do List</h2>
+                <div class="input-group">
+                    <input type="text" id="todo-input" placeholder="Add a new task...">
+                    <button id="add-btn">Add</button>
+                </div>
+                <ul id="todo-list">
+                    </ul>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
